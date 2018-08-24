@@ -91,44 +91,67 @@
 
 <br />
 
-<!-- <form id="form">
-  <div class="">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" value="" placeholder="John, Doe" required>
-    </div>
-    <div class="">
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" value="" placeholder="Name123@email.com" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
-    </div>
-    <div class="">
-      <input type="button" name="sub" id="sub" value="Submit">
-    </div>
-</form> -->
-
 <div id="form" class="container">
-<form id="form" class="justify-content-center">
+<form id="form" class="justify-content-center" novalidate="novalidate" action="submit.html">
+    <div id="errorText"></div>
+    
+<!-- Form for name -->
   <label for="name" style="font-family: 'Montserrat', sans-serif;">Full Name</label>
   <br />
-  <!-- <input type="text" id="name" name="name" value="" style="font-family: 'Montserrat', sans-serif;" placeholder="Johnny Appleseed"> -->
   <textarea name="name" id="name" rows="1" cols="10" required></textarea>
   <br />
+
+  <!-- Form for email -->
   <br />
   <label for="email" style="font-family: 'Montserrat', sans-serif;" required>Email</label>
   <br />
-  <!-- <input type="email" name="email" id="email" value="" style="font-family: 'Montserrat', sans-serif;" placeholder="example@email.com"> -->
-  <textarea name="email" id="email" rows="1" cols="10" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required></textarea>
+  <textarea name="email" id="email" rows="1" cols="10" required></textarea>
   <br />
+
+  <!-- form for phone number -->
+  <br />
+  <label for="phoneNumber">Phone Number</label> 
+  <br />
+  <input id="phoneNumber" name="phoneNumber" type="number"/> 
+  <br />
+  
+  <br />
+  <label for="cust">Have you purchased a Halcyon product before?</label>
+  <br />
+  <label for="yes">Yes</label>
+  <input type="radio" id="yes" name="choice" />
+  <label for="yes">No</label>
+  <input type="radio" id="no" name="choice" />
+  
+
+  <!-- Form for date of birth -->
+  <br />
+  <label for="age">What is this regarding?</label>
+  <br />
+  <select id="topic" name="topic" required="required">
+      <option value="pso">Please Select One</option>
+      <option value="cs">Customer Service</option>
+      <option value="qa">Quality Assurance</option>
+      <option value="ai">Additional Information</option>
+      <option value="ji">Job Inquiries</option>
+      <option value="other">Other</option>
+   </select>
+  <br />
+
+  <!-- Form for comments -->
   <br />
   <label for="QCC" style="font-family: 'Montserrat', sans-serif;">Questions, Comments, Concerns</label>
   <br />
   <textarea name="name" id="QCC" rows="6" cols="40" required></textarea>
-  <!-- <input type="text" name="QCC" id="QCC" value="" style="height: 150px; width: 500px; word-wrap: break-word; font-family: 'Montserrat', sans-serif;" placeholder="Type here..."> -->
   <br />
   <br />
-  <input type="submit" value="Submit" style="font-family: 'Montserrat', sans-serif;">
+  <input type="submit" value="Submit" id="sub" style="font-family: 'Montserrat', sans-serif;">
 </form>
 </div>
 
+
+<div id="pg1part3" class="contact">
+</div>
 
 <div id="pg1part3" class="contact">
 </div>
