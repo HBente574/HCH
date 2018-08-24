@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    </style>
+
+    <link rel="icon" href="images/icons/halcyonlogo.png">
+  </head>
+  <body id="contact">
+
+    <div class="container-fluid" id="header">
+      <header>
+        <div id="navheader" class="row">
+
+         <a class="col-1 p-3" href="index.html"><img src="images/icons/halcyonlogo.png" alt="halcyonlogo.png" width="75px" height="75px"></a>
+         <a class="col-5 p-3" id="noDecor" href="index.html"><h1>halcyon</h1></a>
+
+       <ul id="links" class="nav p-3">
+         <li ><a class="nav-link text-dark" href="index.html">Home</a></li>
+         <li><a class="nav-link text-dark" href="products.html">Products</a></li>
+         <li><a class="nav-link text-dark" href="about.html">About</a></li>
+         <li><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+      </header>
+    </div>
+
+
+    <!-- get involved -->
+
+    <div class="container" id="involved">
+      <h1 id="title" style="text-align: center;">Get Involved, Get Informed</h1>
+      <br />
+      <div class="involved1">
+        <h3>Volunteer Coordinator</h3>
+        <p>If you wish to volunteer, please email Valeria Salvadori with your volunteer application and résumé (if applicable). Expect a personalized response by email within 24 hours. All applications must be 16 years or older and must not have a criminal record.</p>
+        <a href="mailto:valeria.salvadori@halcyon.com">valeria.salvadori@halcyon.com</a>
+      </div>
+
+      <br />
+
+      <div class="involved2">
+        <h3>Hiring Director / VP of Operations</h3>
+        <p>To set up an interview, please submit your application form, your résumé, a letter of recommendation, and a phone number reference to Beck Berran. If any of these items need be omitted from the application, please notate such in the email.</p>
+        <a href="mailto:beck.berran@halcyon.com">beck.berran@halcyon.com</a>
+      </div>
+
+      <br />
+
+      <div class="involved3">
+        <h3>VP of Sales</h3>
+        <p>To see how you can contribute financially to Halcyon Fashion, please contact our VP of Sales Logan Jackson. If you would like to request a sales forecast for the next month or would like to inquire further on your opportunities as a current investor, please call the number provided below.</p>
+        <a href="mailto:logan.jackson@halcyon.com">logan.jackson@halcyon.com</a>  /  <a href="tel:6235559034">623-555-9034</a>
+      </div>
+    </div>
+    <br />
+
+    <!-- get informed -->
+  <div class="container" id="informed">
+    <h1 id="title"></h1>
+    <div class="informed1">
+      <h3>Customer Service</h3>
+      <p>We feel that all experiences with our company should be positive. If you believe that you have felt differently, please reach out to us, giving as much detail as possible. We appreciate your feedback!</p>
+      <a href="mailto:customerservice@halcyon.com">customerservice@halcyon.com</a> / <a href="tel:6235557492">623-555-7492</a>
+    </div>
+
+    <br />
+
+    <div class="informed2">
+      <h3>VP of Expenses, VP of Charities</h1>
+      <p>If you are a potential investor, philanthropist, stock-owner, or have any other affiliation with Halcyon Fashion, you may contact our VP of Expenses and Charities in order to inquire futher details about your payments, tax returns, stocks, etc.</p>
+      <a href="mailto:charli.schneider@halcyon.com">charli.schneider@halcyon.com</a>
+    </div>
+
+    <br />
+
+    <div class="informed3">
+      <h3>Designer</h1>
+      <p>For inquiries about projects, graphic design initiatives, or other proposals you may have regarding Halcyon Fashion designs, art, products, etc., please contact our in-house designer Tiffany Altagracia.</p>
+      <a href="mailto:tiffany.altagracia@halcyon.com">tiffany.altagracia@halcyon.com</a>
+    </div>
+</div>
+
+<br />
+
+<!-- <form id="form">
+  <div class="">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" value="" placeholder="John, Doe" required>
+    </div>
+    <div class="">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" value="" placeholder="Name123@email.com" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+    </div>
+    <div class="">
+      <input type="button" name="sub" id="sub" value="Submit">
+    </div>
+</form> -->
+
+<div id="form" class="container">
+<form id="form" class="justify-content-center">
+  <label for="name" style="font-family: 'Montserrat', sans-serif;">Full Name</label>
+  <br />
+  <!-- <input type="text" id="name" name="name" value="" style="font-family: 'Montserrat', sans-serif;" placeholder="Johnny Appleseed"> -->
+  <textarea name="name" id="name" rows="1" cols="10" required></textarea>
+  <br />
+  <br />
+  <label for="email" style="font-family: 'Montserrat', sans-serif;" required>Email</label>
+  <br />
+  <!-- <input type="email" name="email" id="email" value="" style="font-family: 'Montserrat', sans-serif;" placeholder="example@email.com"> -->
+  <textarea name="email" id="email" rows="1" cols="10" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required></textarea>
+  <br />
+  <br />
+  <label for="QCC" style="font-family: 'Montserrat', sans-serif;">Questions, Comments, Concerns</label>
+  <br />
+  <textarea name="name" id="QCC" rows="6" cols="40" required></textarea>
+  <!-- <input type="text" name="QCC" id="QCC" value="" style="height: 150px; width: 500px; word-wrap: break-word; font-family: 'Montserrat', sans-serif;" placeholder="Type here..."> -->
+  <br />
+  <br />
+  <input type="submit" value="Submit" style="font-family: 'Montserrat', sans-serif;">
+</form>
+</div>
+
+
+<div id="pg1part3" class="contact">
+</div>
+
+<!-- simple footer containing copyright information and links to social media -->
+<div>
+  <footer>
+  <ul class="nav list-inline justify-content-center">
+    <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/facebook.png" width="40px" height="40px" alt="facebook" ></a></li>
+    <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/twitter.png" width="40px" height="40px" alt="twitter"></a></li>
+    <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/insta.png" width="40px" height="40px" alt="instagram"></a></li>
+ </ul>
+  <br />
+  <p class="text-white">Copyright 2018 Halcyon Fashion All Rights Reserved.</p>
+  </footer>
+</div>
+<script type="text/javascript" src="contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    </style>
+
+
+    <link rel="icon" href="images/icons/halcyonlogo.png">
+    <title>Halcyon Products</title>
+  </head>
+  <body id="products">
+
+      <header class="container-fluid" id="products">
+        <div id="navheader" class="row">
+
+         <a class="col-1 p-3" href="index.html"><img src="images/icons/halcyonlogo.png" alt="halcyonlogo.png" width="75px" height="75px"></a>
+        <a class="col-5 p-3" id="noDecor" href="index.html"><h1 id="name">halcyon</h1></a>
+
+       <ul id="links" class="nav p-3">
+         <li ><a class="nav-link text-dark" href="index.html">Home</a></li>
+         <li><a class="nav-link text-dark" href="products.html">Products</a></li>
+         <li><a class="nav-link text-dark" href="about.html">About</a></li>
+         <li><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+      </header>
+
+    <div id="cart">
+      <img src="images/cart.png" alt="cart" width="20%" height="20%" style="padding-bottom: 5px;">
+      <div class="">
+        <span id="amount">0</span> Items in cart
+      </div>
+    </div>
+
+<div class="container-fluid" >
+  <!-- Order -->
+  <script type="text/javascript">
+  var x = 0;
+    function cart() {
+      var value = document.getElementById("amount");
+      var add = document.getElementsByName("add");
+      // alert(value);
+      if (true) {
+        x++;
+      }
+      value.innerHTML = x;
+    }
+
+    function remove() {
+      var value = document.getElementById("amount");
+      var remove = document.getElementsByName("remove");
+      // alert(value);
+      if (true) {
+        x--;
+        if (x < 0) {
+          return;
+        }
+      }
+      value.innerHTML = x;
+    }
+  </script>
+
+  <!-- Rain -->
+  <h1 style="font-size: 96px;">Rain</h1>
+  <br />
+  <div class="row products" id="rain">
+      <div class="pbox col-sm">
+        <div class="pimage col-sm justify-content-center">
+          <img src="images/rain/rain_1.png" width="324" height="318.33">
+        </div>
+        <div class="pinfo col-sm">
+          <h5 class="text-dark">Long Jacket</h5>
+          <h6 class="text-dark">$89.99</h6>
+        </div id="add">
+        <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+        <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+      </div>
+      <div class="pbox col-sm">
+        <div class="pimage col-sm">
+          <img src="images/rain/rain_4.png" width="324" height="318.33">
+        </div>
+        <div class="pinfo col-sm">
+          <h5 class="text-dark">Rain Coat</h5>
+          <h6 class="text-dark">$49.99</h6>
+        </div id="add">
+        <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+        <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+      </div>
+      <div class="pbox col-sm">
+        <div class="pimage col-sm">
+          <img src="images/rain/rain_2.png" width="324" height="318.33">
+        </div>
+        <div class="pinfo col-sm`">
+          <h5 class="text-dark">Rain Coat</h5>
+          <h6 class="text-dark">$89.99</h6>
+        </div id="add">
+        <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+        <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+      </div>
+    </div>
+
+    <!-- second line -->
+    <div class="row products" id="rain">
+        <div class="pbox">
+          <div class="pimage col-sm">
+            <img src="images/rain/rain_3.png" width="324" height="318.33">
+          </div>
+          <div class="pinfo col-sm">
+            <h5 class="text-dark">Trench Coat</h5>
+            <h6 class="text-dark">$44.99</h6>
+          </div id="add">
+          <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+          <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+        </div>
+        <div class="pbox col-sm">
+          <div class="pimage col-sm">
+            <img src="images/rain/rain_8.png" width="324" height="318.33">
+          </div>
+          <div class="pinfo col-sm">
+            <h5 class="text-dark">Rain Coat</h5>
+            <h6 class="text-dark">$49.99</h6>
+          </div id="add">
+          <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+          <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+        </div>
+        <div class="pbox col-sm">
+          <div class="pimage col-sm">
+            <img src="images/rain/rain_5.png" width="324" height="318.33">
+          </div>
+          <div class="pinfo col-sm`">
+            <h5 class="text-dark">Rain Jacket</h5>
+            <h6 class="text-dark">$89.99</h6>
+          </div id="add">
+          <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+          <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+        </div>
+      </div>
+
+<!-- SHINE -->
+<br /><br />
+<h1 style="font-size: 96px;">Shine</h1><section class="row products" id="shine">
+        <div class="pbox col-sm">
+          <div class="pimage col-sm">
+            <img src="images/shine/shine_1.png" width="324" height="318.33">
+          </div>
+          <div class="pinfo col-sm">
+            <h5 class="text-dark">Sunglasses</h5>
+            <h6 class="text-dark">$19.99</h6>
+          </div id="add">
+          <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+          <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+        </div>
+        <div class="pbox col-sm">
+          <div class="pimage col-sm">
+            <img src="images/shine/shine_2.png" width="324" height="318.33">
+          </div>
+          <div class="pinfo col-sm">
+            <h5 class="text-dark">Sunglasses</h5>
+            <h6 class="text-dark">$19.99</h6>
+          </div id="add">
+          <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+          <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+        </div>
+        <div class="pbox col-sm">
+          <div class="pimage col-sm">
+            <img src="images/shine/shine_7.png" width="324" height="318.33">
+          </div>
+          <div class="pinfo col-sm">
+            <h5 class="text-dark">Sunglasses</h5>
+            <h6 class="text-dark">$19.99</h6>
+          </div id="add">
+          <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+          <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+        </div>
+        <!-- second line -->
+      </section>
+      <section class="row products" id="shine">
+          <div class="pbox col-sm">
+            <div class="pimage col-sm">
+              <img src="images/shine/shine_10.png" width="324" height="318.33">
+            </div>
+            <div class="pinfo col-sm">
+              <h5 class="text-dark">Flip Flops</h5>
+              <h6 class="text-dark">$19.99</h6>
+            </div id="add">
+            <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+            <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+          </div>
+          <div class="pbox col-sm">
+            <div class="pimage col-sm">
+              <img src="images/shine/shine_8.png" width="324" height="318.33">
+            </div>
+            <div class="pinfo col-sm">
+              <h5 class="text-dark">Bikini Top</h5>
+              <h6 class="text-dark">$34.99</h6>
+            </div id="add">
+            <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+            <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+          </div>
+          <div class="pbox col-sm">
+            <div class="pimage col-sm">
+              <img src="images/shine/shine_13.png" width="324" height="318.33">
+            </div>
+            <div class="pinfo col-sm">
+              <h5 class="text-dark">Bikini Bottoms</h5>
+              <h6 class="text-dark">$34.99</h6>
+            </div id="add">
+            <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+            <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+          </div>
+          <!-- second line -->
+        </section>
+
+      <!-- SNOW -->
+      <br /><br />
+      <h1 style="font-size: 96px;">Snow</h1>
+      <br />
+      <section class=" row products" id="snow">
+          <div class="pbox col-sm">
+            <div class="pimage col-sm">
+              <img src="images/snow/snow_8.png" width="324" height="318.33">
+            </div>
+            <div class="pinfo col-sm">
+              <h5 class="text-dark">Fur Coat</h5>
+              <h6 class="text-dark">$99.99</h6>
+            </div id="add">
+            <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+            <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+          </div>
+          <div class="pbox col-sm">
+            <div class="pimage col-sm">
+              <img src="images/snow/snow_3.png" width="324" height="318.33">
+            </div>
+            <div class="pinfo col-sm">
+                <h5 class="text-dark">Light Winter Coat</h5>
+              <h6 class="text-dark">$54.99</h6>
+            </div id="add">
+            <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+            <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+          </div>
+          <div class="pbox col-sm">
+            <div class="pimage col-sm">
+              <img src="images/snow/snow_9.png" width="324" height="318.33">
+            </div>
+            <div class="pinfo col-sm">
+              <h5 class="text-dark">Snow Jacket</h5>
+              <h6 class="text-dark">$99.99</h6>
+            </div id="add">
+            <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+            <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+          </div>
+        </section>
+        <!-- second line -->
+        <section class=" row products" id="snow">
+            <div class="pbox col-sm">
+              <div class="pimage col-sm">
+                <img src="images/snow/snow_6.png" width="324" height="318.33">
+              </div>
+              <div class="pinfo col-sm">
+                <h5 class="text-dark">Light Jacket</h5>
+                <h6 class="text-dark">$54.99</h6>
+              </div id="add">
+              <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+              <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+            </div>
+            <div class="pbox col-sm">
+              <div class="pimage col-sm">
+                <img src="images/snow/snow_4.png" width="324" height="318.33">
+              </div>
+              <div class="pinfo col-sm">
+                  <h5 class="text-dark">Snow Jacket</h5>
+                <h6 class="text-dark">$79.99</h6>
+              </div id="add">
+              <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+              <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+            </div>
+            <div class="pbox col-sm">
+              <div class="pimage col-sm">
+                <img src="images/snow/snow_1.png" width="324" height="318.33">
+              </div>
+              <div class="pinfo col-sm">
+                <h5 class="text-dark">Light Winter Coat</h5>
+                <h6 class="text-dark">$79.99</h6>
+              </div id="add">
+              <input type="submit" name="add" value="Add to cart" onclick="cart()" style="padding-left: 21px; padding-right: 21px; text-align: center;">
+              <input type="submit" name="remove" value="Remove item" onclick="remove()" style="padding-right: 13px; padding-left: 13px;">
+            </div>
+          </section>
+       </div>
+      </div>
+      <div id="placeholder" class="text-white">
+      </div>
+
+      <!-- simple footer containing copyright information and links to social media -->
+
+        <footer id="">
+        <ul class="nav list-inline justify-content-center">
+          <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/facebook.png" width="40px" height="40px" alt="facebook" ></a></li>
+        <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/twitter.png" width="40px" height="40px" alt="twitter"></a></li>
+        <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/insta.png" width="40px" height="40px" alt="instagram"></a></li>
+      </ul>
+        <br />
+        <p class="text-white">Copyright 2018 Halcyon Fashion All Rights Reserved.</p>
+        </footer>
+
+  </body>
+</html>
