@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="contact.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Montserrat');
     </style>
@@ -91,15 +92,20 @@
 
 <br />
 
+<div class="informed3">
+  <h3>Quick Comments</h3>
+</div>
+<br />
+
 <div id="form" class="container">
 <form id="form" class="justify-content-center" novalidate="novalidate" action="submit.html">
-    <div id="errorText"></div>
-    
+
+  <div id="formcol1">
+
 <!-- Form for name -->
   <label for="name" style="font-family: 'Montserrat', sans-serif;">Full Name</label>
   <br />
   <textarea name="name" id="name" rows="1" cols="10" required></textarea>
-  <br />
 
   <!-- Form for email -->
   <br />
@@ -107,32 +113,40 @@
   <br />
   <textarea name="email" id="email" rows="1" cols="10" required></textarea>
   <br />
+  <input type="checkbox" value="deals" />
+  <label for="deals" style="font-size: 12px;">Send me emails with Halcyon updates</label>
 
   <!-- form for phone number -->
   <br />
-  <label for="phoneNumber">Phone Number</label> 
+  <label for="phone">Phone Number</label>
   <br />
-  <input id="phoneNumber" name="phoneNumber" type="number"/> 
+  <input id="phone" name="phone" type="number"/>
   <br />
-  
+
   <br />
-  <label for="cust">Have you purchased a Halcyon product before?</label>
+  <label for="cust" id="cust">Have you purchased a Halcyon product before?</label>
   <br />
-  <label for="yes">Yes</label>
+
   <input type="radio" id="yes" name="choice" />
-  <label for="yes">No</label>
+  <label for="yes">Yes</label>
   <input type="radio" id="no" name="choice" />
-  
+  <label for="yes">No</label>
+
+  </div>
+
+  <div id="formcol2">
 
   <!-- Form for date of birth -->
-  <br />
-  <label for="age">What is this regarding?</label>
+  <div id="push">
+
+  <label for="topic">What is this regarding?</label>
   <br />
   <select id="topic" name="topic" required="required">
       <option value="pso">Please Select One</option>
       <option value="cs">Customer Service</option>
       <option value="qa">Quality Assurance</option>
-      <option value="ai">Additional Information</option>
+      <option value="c">Complaint</option>
+      <option value="oi">Order Information</option>
       <option value="ji">Job Inquiries</option>
       <option value="other">Other</option>
    </select>
@@ -141,18 +155,15 @@
   <!-- Form for comments -->
   <br />
   <label for="QCC" style="font-family: 'Montserrat', sans-serif;">Questions, Comments, Concerns</label>
-  <br />
+  </div>
   <textarea name="name" id="QCC" rows="6" cols="40" required></textarea>
   <br />
   <br />
-  <input type="submit" value="Submit" id="sub" style="font-family: 'Montserrat', sans-serif;">
+  <input type="submit" value="Submit" id="submit" style="font-family: 'Montserrat', sans-serif;">
+  </div>
 </form>
 </div>
-
-
-<div id="pg1part3" class="contact">
-</div>
-
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <div id="pg1part3" class="contact">
 </div>
 
@@ -165,9 +176,8 @@
     <li class="nav-item"><a href="https://youtu.be/Yf4CDMpcsZM"><img src="images/icons/insta.png" width="40px" height="40px" alt="instagram"></a></li>
  </ul>
   <br />
-  <p class="text-white">Copyright 2018 Halcyon Fashion All Rights Reserved.</p>
+  <p class="text-white">Copyright 2018 Halcyon Fashion. All Rights Reserved.</p>
   </footer>
 </div>
-<script type="text/javascript" src="contact.js"></script>
   </body>
 </html>

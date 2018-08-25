@@ -1,7 +1,7 @@
 /*
     snoot.js
     Form validation sode for snoot.html
-    
+
     Author: Heather Bente
     Date: 6 August 2018
 */
@@ -10,19 +10,19 @@
 
 var formValidity = true;
 
-// function to validate 
+// function to validate
 function validateFields(fieldsetId) {
-    
+
     var inputElements = document.querySelectorAll("#" + fieldsetId + " input");
     var errorDiv = document.querySelectorAll("#" + fieldsetId + " .errorMessage")[0];
     var fieldsetValidity = true;
     var elementCount = inputElements.length;
     var currentElement;
     try {
-        
+
         // loop thru the input fields looking for blanks
         for (var i = 0; i < elementCount; i++) {
-            
+
             currentElement = inputElements[i];
             // blanks
             if (currentElement.value === "") {
@@ -43,7 +43,7 @@ function validateFields(fieldsetId) {
                 currentElement.style.border = "";
             }
         }
-            // action for invalif fieldset
+            // action for invalid fieldset
             if (fieldsetValidity === false) {
                 if (fieldsetId === "billingAddress") {
                     throw "Please complete all billing address informtation.";
@@ -73,19 +73,19 @@ function validateDeliveryDate() {
     var fieldsetValidity = true;
     var elementCount = selectElements.length;
     var currentElement;
-       
+
     try {
-        
+
         // loop thru the select fields looking for blanks
         for (var i = 0; i < elementCount; i++) {
-    
+
             currentElement = selectElements[i];
             // blanks
             if (currentElement.selectedIndex === -1) {
                 // debugger;
                 currentElement.style.border = "1px solid red";
                 fieldsetValidity = false;
-        
+
             }
             // not blanks
             else {
@@ -169,7 +169,7 @@ function validatePayment() {
         }
         else {
             ccNumElement.style.background = "white";
-        }    
+        }
                     // action for invalid fieldset
         if (fieldsetValidity === false) {
                 throw "Please complete payment info.";
@@ -243,16 +243,16 @@ function validateForm(evt) {
     else {
         evt.returnValue = false;
     }
-    
+
     formValidity = true;
-    
+
     validateAddress("billingAddress");
     validateAddress("deliveryAddress");
     validateDeliveryDate();
     validatePayment();
     validateMessage();
     validateCreateAccount();
-    
+
     if (formValidity === true) { // form is valid
         document.getElementById("errorText").innerHTML = "";
         document.getElementById("errorText").style.display = "none";
@@ -293,14 +293,14 @@ function createEventListeners() {
         messageBox.addEventListener("change", autoCheckCustom, false);
     }
     else if (messageBox.attachEvent) {
-        messageBox.attachEvent("onchange", autoCheckCustom);     
+        messageBox.attachEvent("onchange", autoCheckCustom);
     }
     var same = document.getElementById("sameAddr");
     if (same.addEventListener) {
         same.addEventListener("change", copyBillingAddress, false);
     }
     else if (same.attachEvent) {
-        same.attachEvent("onchange", copyBillingAddress);     
+        same.attachEvent("onchange", copyBillingAddress);
     }
     var form = document.getElementsByTagName("form")[0];
     if (form.addEventListener) {
@@ -308,7 +308,7 @@ function createEventListeners() {
         form.addEventListener("submit", validateForm, false);
     }
     else if (form.attachEvent) {
-        form.attachEvent("onsubmit", validateForm, false);     
+        form.attachEvent("onsubmit", validateForm, false);
     }
 }
 
@@ -346,7 +346,7 @@ else if (selectedMonth === "1" || selectedMonth === "3" || selectedMonth === "5"
 }
 }
 
-// else 
+// else
 
 // page load event handlers
 if (window.addEventListener) {
